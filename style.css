@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins&display=swap");
+body {
+  background-color: rgb(17, 17, 17);
+  font-family: "Poppins";
+  margin: 0;
+}
+
+.header p {
+  color: white;
+  font-weight: bold;
+  font-size: 25px;
+  margin: 15px;
+}
+
+.rules {
+  margin-top: 20px;
+}
+.rules p {
+  color: rgb(190, 190, 190);
+  font-size: 17px;
+  margin: 0 30px;
+}
+.rules :first-child {
+  color: white;
+}
+
+main {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main p {
+  color: rgb(190, 190, 190);
+  font-size: 15px;
+}
+
+#color-rect {
+  border: 1px solid rgb(190, 190, 190);
+  background-color: rgb(27, 27, 27);
+  border-radius: 10px;
+  height: 300px;
+  width: 300px;
+  margin-bottom: 50px;
+}
+
+@-webkit-keyframes amongus-move {
+  0% {
+    left: 10%;
+  }
+  100% {
+    left: calc(90% - 100px);
+    transform: rotateZ(360deg);
+  }
+}
+
+@keyframes amongus-move {
+  0% {
+    left: 10%;
+  }
+  100% {
+    left: calc(90% - 100px);
+    transform: rotateZ(360deg);
+  }
+}
+.folder-animations img {
+  width: 100px;
+  z-index: 2;
+}
+.folder-animations :first-child {
+  position: absolute;
+  left: 10%;
+}
+.folder-animations :last-child {
+  position: absolute;
+  left: calc(90% - 100px);
+}
+.folder-animations #amongus-image {
+  position: absolute;
+  left: 10%;
+  margin-top: 10px;
+  width: 80px;
+  height: 80px;
+  z-index: 1;
+  -webkit-animation: amongus-move 4s linear infinite;
+          animation: amongus-move 4s linear infinite;
+}
+
+.loading-container {
+  margin-top: 150px;
+  width: 75vw;
+}
+
+#download-button {
+  height: 40px;
+  width: 10vw;
+  margin: 15px;
+  cursor: pointer;
+}
+
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+#color-quiz {
+  display: none;
+  width: calc(100% - 50px);
+  height: calc(100% - 50px);
+  margin: 20px;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+  gap: 10px;
+  -webkit-animation: fade-in 0.6s;
+          animation: fade-in 0.6s;
+}
+#color-quiz div {
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.background-bar {
+  position: relative;
+  margin-top: -50px;
+  top: 50px;
+  background: rgba(116, 116, 116, 0.2);
+  border-radius: 5px;
+  width: 100%;
+  height: 50px;
+}
+
+#loading-bar {
+  background: green;
+  float: left;
+  border-radius: 5px;
+  width: 0%;
+  height: 50px;
+  transition: 1s linear;
+  display: flex;
+}
+#loading-bar p {
+  font-size: 20px;
+  font-weight: bold;
+  margin: auto 15px;
+}
+
+#download-button {
+  font-family: "Poppins";
+  font-size: 15px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 5px 15px;
+}
+
+#upload-button {
+  padding: 2.5px 10px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 20px;
+}/*# sourceMappingURL=style.css.map */

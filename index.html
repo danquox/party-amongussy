@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="./style.css">
+<script src="./index.js"></script>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crazy Amongus</title>
+</head>
+<body>
+  <div class="header">
+    <p id="title">Katelyns Crazy Amongus Game [DOWNLOAD]</p>
+  </div>
+  <div class="rules">
+    <p>Rules :</p>
+    <p>Basically, you have to press download / upload but make sure to be watching because there is a color that will randomly appear at any time! After the download finishes you will have to guess the color and if it's wrong than you will have to start over.</p>
+  </div>
+  <main>
+    <p id="text-value">This is where the color will appear.</p>
+    <div id="color-rect">
+      <div id="color-quiz">
+        <div class="color-option" style="background: red" value="red"></div>
+        <div class="color-option" style="background: blue" value="blue"></div>
+        <div class="color-option" style="background: green" value="green"></div>
+        <div class="color-option" style="background: yellow" value="yellow"></div>
+      </div>
+    </div>
+    <span class="folder-animations">
+      <img id="image-one" src="https://img.icons8.com/color/512/opened-folder.png" alt="">
+      <img id="amongus-image" style="animation: none; opacity: 0" src="https://media.tenor.com/8cc2mmUPACoAAAAi/among-us-red-sus.gif" alt="">
+      <img id="image-two" src="https://img.icons8.com/color/512/folder-invoices.png" alt="">
+    </span>
+    <span class="loading-container">
+      <div class="background-bar"></div>
+      <div id="loading-bar">
+        <p id="progress-value">0%</p>
+      </div>
+    </span>
+    <button id="download-button">DOWNLOAD</button>
+    <button id="upload-button">CHANGE TO UPLOAD</button>
+  </main>
+</body>
+</html>
